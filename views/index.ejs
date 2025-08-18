@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lisper</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="gradient-background">
+    <div class="main ">
+
+      <div class="container ">
+        <form onsubmit="return CheckData()" action="/getuv" method="POST">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your area name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="areaName"
+            aria-describedby=""
+            placeholder="Enter the name of your area ,city ,state ,country. ( i.e Surat ,Surat ,Gujarat ,India ) "
+            name="AreaName"
+            required
+            
+            />
+            <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your location with anyone else.</small
+            >
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleInputEmail1">Latitude</label>
+            <input
+            type="text"
+            class="form-control"
+            id=""
+            aria-describedby="emailHelp"
+            placeholder="Enter latitude"
+            name="lat"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your location with anyone else.</small
+            >
+          </div> -->
+          <!-- <div class="form-group">
+            <label for="exampleInputPassword1">Longitude</label>
+            <input
+            type="text"
+            class="form-control"
+            id=""
+            placeholder="Enter longitude"
+            name="lon"
+            />
+          </div> -->
+                
+          <button  id="Btn" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+
+      <hr>
+      
+        
+
+
+
+     <% if(locals.content){ %>
+        <div id="boxId" class="box container">
+          <h1>Tips for skin care currently in <em>  <% if(ActualCityDistrictName){ %> <%= ActualCityDistrictName %> <%} %>     <% if(ActualCityName){ %> <%= ActualCityName %> <%} %>       <% if(ActualStateName){ %> <%= ActualStateName %> <%} %>       <% if(ActualCountryName){ %> <%= ActualCountryName %>   <%} %>     <% if(ActualContinent){ %> <%= ActualContinent %> <%} %>  </strong></h1>
+            <h5> Current time's uv is <strong> <%= content.result.uv %> </strong></h5>
+            <h5> Today's maximum uv is <strong> <%= content.result.uv_max %> </strong> at <strong><%= Time %></strong></h5>
+            <strong><h4 class="advice"><b>Recommandations</b> : <%= advice %></h4></strong>
+            
+            <% }else if(locals.error){ %>
+              <div class="error-box  container ">
+                
+                <h3> <%= error %> </h3>
+              </div>
+             
+            <% }else{ %>
+              <div class="initial-box container ">
+              <h3>Tips for your skin care will appears here...😎😎 </h3>
+              </div>
+              <%}%>
+              
+              
+            </div>
+          </div>
+
+          <!-- <script>
+            // Get the button
+            let btn = document.getElementById('Btn');
+            let tipBox = document.getElementById("boxId")
+            
+            function CheckData()
+            {
+              let input = document.getElementById('areaName').value
+              // Prevent the default form submission
+              if(input.trim()===""){
+                tipBox.classList.remove("box");
+                tipBox.classList.add("danger-box");
+                return false;
+              }else{
+                tipBox.classList.remove("danger-box");
+                tipBox.classList.add("success-box");
+                return true;
+              }
+            }
+          
+
+            
+          </script> -->
+          </body>
+          </html>

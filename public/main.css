@@ -1,0 +1,235 @@
+/* .box {
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container{
+    padding: 20px;
+
+}
+
+
+ */
+
+
+/* main.css */
+
+/* -------- General Page Style -------- */
+.advice {
+  color: #ffffff;
+  text-shadow: 1.5px 1.5px #006f08;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f6f9fc, #eaf0f5);
+  min-height: 100vh;
+  padding-top: 40px;
+  color: #2c3e50;
+}
+
+/* -------- Container Card Style -------- */
+.container {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+}
+
+/* -------- Labels -------- */
+label {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 15px;
+}
+
+/* -------- Inputs -------- */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #d0d7de;
+  padding: 12px 14px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* -------- Help Text -------- */
+.form-text {
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+/* -------- Button Style -------- */
+.btn-primary {
+  background: linear-gradient(90deg, #6c63ff, #7b4dff);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(108, 99, 255, 0.5);
+}
+
+/* -------- Tips Box -------- */
+.initial-box {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 114, 255, 0.4);
+  animation: fadeIn 0.6s ease;
+}
+
+
+.box {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00f35d, #4ea96c);
+  /* green-teal */
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(56, 249, 215, 0.4);
+  animation: fadeIn 0.6s ease;
+}
+
+
+
+.error-box {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #b83620, #c33254);
+  /* red gradient */
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(255, 65, 108, 0.4);
+  animation: fadeIn 0.6s ease;
+}
+
+
+
+
+.box h1 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.box h4,
+.box h5 {
+  font-weight: 400;
+}
+
+/* -------- UV Index Highlight -------- */
+.uv-low {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.uv-moderate {
+  color: #f39c12;
+  font-weight: 700;
+}
+
+.uv-high {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+/* -------- Divider -------- */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #dcdde1, transparent);
+  margin: 35px 0;
+}
+
+/* -------- Animation -------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 576px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+/* .gradient-background {
+  background: linear-gradient(300deg, #f9d423, #ff4e50, #24c6dc);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #ffafbd, #ffc3a0, #2193b0);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+/* .gradient-background {
+  background: linear-gradient(300deg, #a1ffce, #faffd1, #ffd89b);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
