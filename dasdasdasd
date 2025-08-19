@@ -1,0 +1,11 @@
+[33mcommit 21aee3e03b0ced3995ab5e66a4c6643763d9b028[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: JashMistry83 <jashmistry1721@gmail.com>
+Date:   Mon Aug 18 23:47:21 2025 +0530
+
+    Fix package.json for Render deployment
+
+[33mcommit 3de3375a8de49176774b4ea32095f8684d563a35[m
+Author: JashMistry83 <jashmistry1721@gmail.com>
+Date:   Mon Aug 18 23:37:07 2025 +0530
+
+    Initial commit - 1

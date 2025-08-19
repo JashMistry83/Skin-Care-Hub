@@ -13,6 +13,9 @@
     <div class="main ">
 
       <div class="container ">
+      <h1 class="page-title">Skin Care Hub</h1>
+        
+
         <form onsubmit="return CheckData()" action="/getuv" method="POST">
           <div class="form-group">
             <label for="exampleInputEmail1">Your area name</label>
@@ -69,9 +72,9 @@
      <% if(locals.content){ %>
         <div id="boxId" class="box container">
           <h1>Tips for skin care currently in <em>  <% if(ActualCityDistrictName){ %> <%= ActualCityDistrictName %> <%} %>     <% if(ActualCityName){ %> <%= ActualCityName %> <%} %>       <% if(ActualStateName){ %> <%= ActualStateName %> <%} %>       <% if(ActualCountryName){ %> <%= ActualCountryName %>   <%} %>     <% if(ActualContinent){ %> <%= ActualContinent %> <%} %>  </strong></h1>
-            <h5> Current time's uv is <strong> <%= content.result.uv %> </strong></h5>
-            <h5> Today's maximum uv is <strong> <%= content.result.uv_max %> </strong> at <strong><%= Time %></strong></h5>
-            <strong><h4 class="advice"><b>Recommandations</b> : <%= advice %></h4></strong>
+            <h4> Current time's uv is <strong> <%= content.result.uv %> </strong></h4>
+            <h4> Today's maximum uv is <strong> <%= content.result.uv_max %> </strong> at <strong><%= Time %></strong></h4>
+            <strong><h2 class="advice"><b>Recommandations for now</b> : <%= advice %></h2></strong>
             
             <% }else if(locals.error){ %>
               <div class="error-box  container ">
